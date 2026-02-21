@@ -1,23 +1,23 @@
-# 🩺 Diabetes Prediction (PIMA Dataset)
+#  Diabetes Prediction (PIMA Dataset)
 
 This project focuses on **early diabetes risk prediction** using the **PIMA Indians Diabetes Dataset**.  
 The problem is formulated as a **binary classification task** where the goal is to predict whether a patient is diabetic (**Outcome = 1**) or not (**Outcome = 0**) based on clinical measurements.
 
 ---
 
-## 👥 Group Members
+##  Group Members
 - Rümeysa Çevik
 - Ayşe Serra Gümüştakım
 
 ---
 
-## 🎯 Project Objective
+##  Project Objective
 Early prediction of diabetes supports preventive healthcare decisions and reduces long-term complications.  
 This project aims to build and compare multiple machine learning models under a consistent preprocessing and evaluation framework.
 
 ---
 
-## 📦 Dataset
+##  Dataset
 - **PIMA Indians Diabetes Dataset**
 - **768 samples**, **8 input features**, **1 target**
 - Target: **Outcome** (1 = diabetic, 0 = non-diabetic)
@@ -29,7 +29,7 @@ Features:
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 EDA is performed to understand:
 - Class distribution (moderate imbalance)
 - Feature distributions (skewness & zero-heavy columns)
@@ -41,7 +41,7 @@ Key observation:
 
 ---
 
-## 🧼 Data Preprocessing
+##  Data Preprocessing
 
 ### 1) Missing Value Handling
 In the PIMA dataset, **0 values** in these columns are treated as missing:
@@ -67,7 +67,7 @@ Standardization is applied using **StandardScaler**, especially for:
 
 ---
 
-## 🤖 Models Used
+##  Models Used
 
 ### Baseline Models
 - Logistic Regression (interpretable baseline)
@@ -89,7 +89,7 @@ Tuning is performed using:
 
 ---
 
-## 📊 Evaluation
+##  Evaluation
 Models are evaluated using:
 - Accuracy
 - Precision
@@ -103,7 +103,7 @@ Also included:
 
 ---
 
-## ✅ Results Summary (Highlights)
+##  Results Summary (Highlights)
 
 - **SVM baseline** achieved the best ROC-AUC among tested configurations.
 - **Random Forest baseline** achieved the highest accuracy among baseline models.
@@ -112,7 +112,7 @@ Also included:
 
 ---
 
-## 🧪 Statistical Test (Hypothesis Testing)
+##  Statistical Test (Hypothesis Testing)
 A paired t-test is used to compare ROC-AUC scores (baseline vs tuned):
 
 - **Logistic Regression**: no statistically significant difference
@@ -121,7 +121,7 @@ A paired t-test is used to compare ROC-AUC scores (baseline vs tuned):
 
 ---
 
-## 🛠 Technologies Used
+##  Technologies Used
 - Python
 - NumPy, Pandas
 - Scikit-learn
@@ -129,7 +129,7 @@ A paired t-test is used to compare ROC-AUC scores (baseline vs tuned):
 
 ---
 
-## 📌 Notes / Future Work
+##  Notes / Future Work
 Potential improvements:
 - Threshold optimization (precision/recall trade-off)
 - Cost-sensitive learning
